@@ -1,6 +1,6 @@
 # Fast Nano SLMs (Fine-Tuning & Optimization)
 
-**Main task:** optimizing inference and memory efficiency for function-calling tasks (fine-tuning) in private/resource-constrained environments.
+**Main Goal:** Optimizing Inference and Memory Efficiency for Function-calling tasks (fine-tuning) in private/resource-constrained environments.
 
 # Experiments 
 
