@@ -4,11 +4,30 @@
 
 **Current SOTA Model:** [FunctionGemma 270M by Google DeepMind](https://deepmind.google/models/gemma/functiongemma/) is an open model specialized for function calling at the edge.
 
+## Setup (free)
+
+*All experiments were conducted using freely available and accessible resources, ensuring that experiments will be reproducable without any extra-costs.*
+
+* Hardware: `NVIDIA Tesla T4 (VRAM 16GB)`
+* Environment: `Google Colab / Kaggle Notebooks`
+
 ## Dataset
 
 [Salesforce/xlam-function-calling-60k dataset](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) - 60,000 data collected by APIGen, an automated data generation pipeline designed to produce verifiable high-quality datasets for function-calling applications. 
 
-`...`
+### Data Splitting
+
+*The dataset was downsampled to 50% to mitigate `out-of-memory issues` and accelerate training and evaluation experiments.*
+
+Data Splitting Notebook: [notebooks/Data_Splitting_Nano_SLMs_Function_Calling_Salesforce.ipynb](notebooks/Data_Splitting_Nano_SLMs_Function_Calling_Salesforce.ipynb)
+
+| Set | Samples |
+| ---  | ---     |
+| Test | 1,500 (5%) | 
+| Validation | 1,500 (5%) | 
+| SFT Train | 10,000 (~33%) |
+| GRPO Train | 17,000 (~57%) |
+| **Total** | 30,000 |
 
 ## Nano Function Calling Master SLMs Zoo
 
