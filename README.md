@@ -27,9 +27,8 @@ Data Splitting Notebook: [notebooks/Data_Splitting_Nano_SLMs_Function_Calling_Sa
 
 | Set | Samples |
 | ---  | ---     |
-| Test | 1,000 (~10%) | 
-| Validation | 1,000 (~10%) | 
-| SFT Train | 8,000 (~80%) |
+| Test | 1,000 (~10%) |  
+| SFT Train | 9,000 (~90%) |
 | **Total** | 10,000 |
 
 ## Nano Function Calling Master SLMs Zoo
