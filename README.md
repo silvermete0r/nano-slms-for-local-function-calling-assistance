@@ -15,23 +15,26 @@
 
 [Salesforce/xlam-function-calling-60k dataset](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) - 60,000 data collected by APIGen, an automated data generation pipeline designed to produce verifiable high-quality datasets for function-calling applications. 
 
+## Metrics
+
+
+
 ### Data Splitting
 
-*The dataset was downsampled to 50% to mitigate `out-of-memory issues` and accelerate training and evaluation experiments.*
+*We used only 10k samples out of the 60k-sample dataset to mitigate out-of-memory issues and accelerate training and evaluation experiments. Additionally, for fine-tuning sub-1B models, we required only a relatively small amount of data for adaptation and instruction-following through lightweight fine-tuning, rather than aggressive full fine-tuning.*
 
 Data Splitting Notebook: [notebooks/Data_Splitting_Nano_SLMs_Function_Calling_Salesforce.ipynb](notebooks/Data_Splitting_Nano_SLMs_Function_Calling_Salesforce.ipynb)
 
 | Set | Samples |
 | ---  | ---     |
-| Test | 1,500 (5%) | 
-| Validation | 1,500 (5%) | 
-| SFT Train | 10,000 (~33%) |
-| GRPO Train | 17,000 (~57%) |
-| **Total** | 30,000 |
+| Test | 1,000 (~10%) | 
+| Validation | 1,000 (~10%) | 
+| SFT Train | 8,000 (~80%) |
+| **Total** | 10,000 |
 
 ## Nano Function Calling Master SLMs Zoo
 
-Lightweight function-calling models fine-tuned using `LoRA SFT (full-precision) + GRPO (Group Relative Policy Optimization -> deterministic/verifiable rewards)` based on the `Salesforce/xlam-function-calling-60k dataset`
+Lightweight function-calling models fine-tuned using `LoRA SFT (full-precision)` based on the `Salesforce/xlam-function-calling-60k dataset`
 
 | No. | Base model | Huggingface Link | 
 | --- | --- | --- |
