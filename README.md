@@ -15,30 +15,6 @@
 
 [Salesforce/xlam-function-calling-60k dataset](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) - 60,000 data collected by APIGen, an automated data generation pipeline designed to produce verifiable high-quality datasets for function-calling applications. 
 
-## Metrics
-
-*Estimated during the final evaluation inference stage of the fine-tuned model.*
-
-| Category         | Metric                       | Description                                                                        |
-| ---------------- | ---------------------------- | ---------------------------------------------------------------------------------- |
-| **Accuracy**     | `json_valid_pct`             | Percentage of outputs that are valid JSON                                          |
-| **Accuracy**     | `name_match_pct`             | Percentage of predictions where the function/tool name matches the expected target |
-| **Accuracy**     | `args_keys_match_pct`        | Percentage of predictions where argument keys match the reference keys             |
-| **Accuracy**     | `args_exact_pct`             | Percentage of predictions with an exact argument match                             |
-| **Performance**  | `wall_total_s`               | Total wall-clock execution time (seconds)                                          |
-| **Performance**  | `avg_latency_s`              | Average end-to-end latency per sample (seconds)                                    |
-| **Performance**  | `p95_latency_s`              | 95th percentile latency (seconds)                                                  |
-| **Performance**  | `avg_ttft_s`                 | Average time-to-first-token (TTFT) in seconds                                      |
-| **Performance**  | `avg_tokens_per_sec`         | Average generation throughput in tokens per second                                 |
-| **Performance**  | `avg_tokens_generated`       | Average number of generated tokens per sample                                      |
-| **Performance**  | `avg_vram_delta_mb`          | Average GPU VRAM usage increase (MB)                                               |
-| **Performance**  | `peak_vram_reserved_mb`      | Average peak reserved VRAM during inference (MB)                                   |
-| **Performance**  | `avg_ram_delta_mb`           | Average system RAM usage increase (MB)                                             |
-| **Performance**  | `avg_cpu_percent`            | Average CPU utilization percentage                                                 |
-| **Performance**  | `throughput_samples_per_sec` | Number of processed samples per second                                             |
-| **CO₂ / Energy** | `emissions_kg`               | Estimated total CO₂ emissions in kilograms                                         |
-| **CO₂ / Energy** | `emissions_g`                | Estimated total CO₂ emissions in grams                                             |
-
 ### Data Splitting
 
 *We used only 10k samples out of the 60k-sample dataset to mitigate out-of-memory issues and accelerate training and evaluation experiments. Additionally, for fine-tuning sub-1B models, we required only a relatively small amount of data for adaptation and instruction-following through lightweight fine-tuning, rather than aggressive full fine-tuning.*
@@ -50,6 +26,42 @@ Data Splitting Notebook: [notebooks/Data_Splitting_Nano_SLMs_Function_Calling_Sa
 | Test | 1,000 (~10%) |  
 | SFT Train | 9,000 (~90%) |
 | **Total** | 10,000 |
+
+## Metrics
+
+*Estimated during the final evaluation inference stage of the fine-tuned model.*
+
+### Accuracy
+
+| Metric              | Description                                                                        |
+| ------------------- | ---------------------------------------------------------------------------------- |
+| json_valid_pct      | Percentage of outputs that are valid JSON                                          |
+| name_match_pct      | Percentage of predictions where the function/tool name matches the expected target |
+| args_keys_match_pct | Percentage of predictions where argument keys match the reference keys             |
+| args_exact_pct      | Percentage of predictions with an exact argument match                             |
+
+### Performance
+
+| Metric                     | Description                                        |
+| -------------------------- | -------------------------------------------------- |
+| wall_total_s               | Total wall-clock execution time in seconds         |
+| avg_latency_s              | Average end-to-end latency per sample              |
+| p95_latency_s              | 95th percentile latency                            |
+| avg_ttft_s                 | Average time-to-first-token                        |
+| avg_tokens_per_sec         | Average generation throughput in tokens per second |
+| avg_tokens_generated       | Average number of generated tokens per sample      |
+| avg_vram_delta_mb          | Average GPU VRAM usage increase in MB              |
+| peak_vram_reserved_mb      | Peak reserved GPU VRAM during inference in MB      |
+| avg_ram_delta_mb           | Average system RAM usage increase in MB            |
+| avg_cpu_percent            | Average CPU utilization percentage                 |
+| throughput_samples_per_sec | Processed samples per second                       |
+
+### CO₂ / Energy
+
+| Metric       | Description                                |
+| ------------ | ------------------------------------------ |
+| emissions_kg | Estimated total CO₂ emissions in kilograms |
+| emissions_g  | Estimated total CO₂ emissions in grams     |
 
 ## Nano Function Calling Master SLMs Zoo
 
