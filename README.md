@@ -68,6 +68,7 @@ Lightweight function-calling models fine-tuned using `LoRA SFT (full-precision)`
 *Benchmarking the current SOTA model for function-calling based on our testing set (~1000 samples):*
 
 | model | languages support | repo files size | benchmark-result `args_exact_pct` (1000 samples) | inference-notebook | 
+| --- | --- | --- | --- | --- | 
 | [google/functiongemma-270m-it](https://huggingface.co/google/functiongemma-270m-it) | 140+ | 864MB | `soon..` | `soon..` |
 
 
