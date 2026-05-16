@@ -94,4 +94,11 @@ Lightweight function-calling models fine-tuned using `LoRA SFT (full-precision)`
 
 This project uses data derived from the Salesforce xLAM Function Calling 60k dataset: https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k | Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 
-Liu, Z., Hoang, T., Zhang, J., Zhu, M., Lan, T., Kokane, S., ... & Xiong, C. (2024). Apigen: Automated pipeline for generating verifiable and diverse function-calling datasets. Advances in Neural Information Processing Systems, 37, 54463-54482.
+```
+@article{liu2024apigen,
+  title={APIGen: Automated Pipeline for Generating Verifiable and Diverse Function-Calling Datasets},
+  author={Liu, Zuxin and Hoang, Thai and Zhang, Jianguo and Zhu, Ming and Lan, Tian and Kokane, Shirley and Tan, Juntao and Yao, Weiran and Liu, Zhiwei and Feng, Yihao and others},
+  journal={arXiv preprint arXiv:2406.18518},
+  year={2024}
+}
+```
