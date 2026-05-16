@@ -89,3 +89,9 @@ Lightweight function-calling models fine-tuned using `LoRA SFT (full-precision)`
 1. Responsible Generative AI Toolkit: Tools and guidance to design, build and evaluate open AI models responsibly. https://ai.google.dev/responsible
 2. Google’s Secure AI Framework (SAIF): https://safety.google/safety/saif/
 3. No-Code Fine-tuning web platform for gemma-270m: https://huggingface.co/spaces/google/functiongemma-tuning-lab
+
+## References
+
+This project uses data derived from the Salesforce xLAM Function Calling 60k dataset: https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k | Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+
+Liu, Z., Hoang, T., Zhang, J., Zhu, M., Lan, T., Kokane, S., ... & Xiong, C. (2024). Apigen: Automated pipeline for generating verifiable and diverse function-calling datasets. Advances in Neural Information Processing Systems, 37, 54463-54482.
