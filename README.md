@@ -81,9 +81,11 @@ Lightweight function-calling models fine-tuned using `LoRA SFT (full-precision)`
 
 | model | languages support | repo files size | benchmark-result `args_exact_pct` (1000 samples) | inference-notebook | 
 | --- | --- | --- | --- | --- | 
-| [google/functiongemma-270m-it](https://huggingface.co/google/functiongemma-270m-it) | 140+ | 864MB | `soon..` | `soon..` |
+| [hf:google/functiongemma-270m-it](https://huggingface.co/google/functiongemma-270m-it) + [kaggle:google/functiongemma](https://www.kaggle.com/models/google/functiongemma/) | 140+ | 864MB | `` | [functiongemma-test-sf-60k-function-calling-1k](https://www.kaggle.com/code/armanzhalgasbayev/functiongemma-test-sf-60k-function-calling-1k) |
 
 
-## Experimentations
+## Relevant Resources
 
-1. No-Code Fine-tuning web platform for gemma-270m: https://huggingface.co/spaces/google/functiongemma-tuning-lab
+1. Responsible Generative AI Toolkit: Tools and guidance to design, build and evaluate open AI models responsibly. https://ai.google.dev/responsible
+2. Google’s Secure AI Framework (SAIF): https://safety.google/safety/saif/
+3. No-Code Fine-tuning web platform for gemma-270m: https://huggingface.co/spaces/google/functiongemma-tuning-lab
