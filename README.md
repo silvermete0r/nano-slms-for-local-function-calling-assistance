@@ -2,6 +2,10 @@
 
 **Main Goal:** Optimizing Inference and Memory Efficiency for Function-calling tasks (fine-tuning) in private/resource-constrained environments.
 
+![nano_slm_use_case_illustration_by_chatgpt_image_2](assets/nano_slm_api_router_iot_use_case_diagram.png)
+
+*Image generated with GPT Image 2 to demonstrate the core idea of Nano SLM function-calling models.*
+
 **Current SOTA Model:** [FunctionGemma 270M by Google DeepMind](https://deepmind.google/models/gemma/functiongemma/) is an open model specialized for function calling at the edge.
 
 ## Setup (free)
@@ -79,10 +83,15 @@ Lightweight function-calling models fine-tuned using `LoRA SFT (full-precision)`
 
 *Benchmarking the current SOTA model for function-calling based on our testing set (~1000 samples):*
 
-| model | languages support | repo files size | benchmark-result `args_exact_pct` (1000 samples) | inference-notebook | 
+| model | languages support | repo files size | `name_match_pct` | `args_keys_match_pct` | `args_exact_pct` | inference-notebook | 
 | --- | --- | --- | --- | --- | 
-| [hf:google/functiongemma-270m-it](https://huggingface.co/google/functiongemma-270m-it) + [kaggle:google/functiongemma](https://www.kaggle.com/models/google/functiongemma/) | 140+ | 864MB | `` | [functiongemma-test-sf-60k-function-calling-1k](https://www.kaggle.com/code/armanzhalgasbayev/functiongemma-test-sf-60k-function-calling-1k) |
+| [hf:google/functiongemma-270m-it](https://huggingface.co/google/functiongemma-270m-it) + [kaggle:google/functiongemma](https://www.kaggle.com/models/google/functiongemma/) | 140+ | 864MB | `95.6%` | `80.1%` | `59.1%` | [functiongemma-test-sf-60k-function-calling-1k](https://www.kaggle.com/code/armanzhalgasbayev/functiongemma-test-sf-60k-function-calling-1k) |
 
+> FunctionGemma requires additional fine-tuning for specific tasks and, by default, produces outputs using a set of specialized formatting control tokens defined in the official documentation: https://ai.google.dev/gemma/docs/functiongemma/formatting-and-best-practices
+
+> We have implemented a custom `functiongemma -> json xlam-60k format` converter, and it does not always work reliably across all cases. So, it is important to emphasize that this is not a benchmark or a meaningful accuracy evaluation, since the model was not fine-tuned for tasks like in this dataset (probably).
+
+> Nevertheless, the results of the functiongemma are impressive, showing almost 59.1% accuracy in the overall answers. As function calling is the core specialization of the model, FunctionGemma already outperforms non-fine-tuned base SLMs on function-calling tasks. 
 
 ## Relevant Resources
 
