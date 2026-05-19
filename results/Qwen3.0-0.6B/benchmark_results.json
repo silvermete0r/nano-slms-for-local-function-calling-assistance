@@ -1,0 +1,31 @@
+[
+  {
+    "label": "Base model (before fine-tuning)",
+    "timestamp": "2026-05-19T20:17:01.202328Z",
+    "total_samples": 1,
+    "batch_size": 8,
+    "accuracy": {
+      "json_valid_pct": 100.0,
+      "name_match_pct": 100.0,
+      "args_keys_match_pct": 100.0,
+      "args_exact_pct": 100.0
+    },
+    "performance": {
+      "wall_total_s": 1444.47,
+      "avg_latency_s": 1.3583,
+      "p95_latency_s": 4.3429,
+      "avg_ttft_s": 0.083,
+      "avg_tokens_per_sec": 70.2212,
+      "avg_tokens_generated": 70.605,
+      "avg_vram_delta_mb": 0.0086,
+      "peak_vram_reserved_mb": 11980.0,
+      "avg_ram_delta_mb": 0.0006,
+      "avg_cpu_percent": 72.9224,
+      "throughput_samples_per_sec": 0.0
+    },
+    "co2": {
+      "emissions_kg": 0.02217,
+      "emissions_g": 22.1697
+    }
+  }
+]

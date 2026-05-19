@@ -14,7 +14,7 @@ def remove_widget_keys(obj):
     else:
         return obj
 
-NOTEBOOK_PATH = "../notebooks/SLM_Qwen2_5_0_5B_Fine_Tuning_for_Function_Calling_Tasks.json"
+NOTEBOOK_PATH = "../notebooks/SLM_Qwen3_0_0_6B_Fine_Tuning_for_Function_Calling_Tasks.json"
 
 # load
 with open(NOTEBOOK_PATH, "r") as f:

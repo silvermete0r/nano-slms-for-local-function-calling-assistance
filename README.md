@@ -71,10 +71,10 @@ Data Splitting Notebook: [notebooks/Data_Splitting_Nano_SLMs_Function_Calling_Sa
 
 Lightweight function-calling models fine-tuned using `LoRA SFT (full-precision)` based on the `Salesforce/xlam-function-calling-60k dataset`
 
-| No. | Base model | Fine-tuned HF Model Link | supported languages | repo files size | `name_match_pct` | `args_keys_match_pct` | `args_exact_pct` | `train_notebook` |
+| No. | Base model | Fine-tuned HF Model Link | supported languages | repo files size | `name_match_pct` | `args_keys_match_pct` | `args_exact_pct` | `notebook` |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
 | 1 | [Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct) | [silvermete0r/qwen2.5-nano-function-master](https://huggingface.co/silvermete0r/qwen2.5-nano-function-master) | ~29 | 1GB | `96.4` | `87.9` | `77.7` | [notebook-link](notebooks/SLM_Qwen2_5_0_5B_Fine_Tuning_for_Function_Calling_Tasks.ipynb) |
-| 2 | [Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B) | *release will be soon..* | 100+ | 1.52GB | `` | `` | `` | `` |
+| 2 | [Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B) | *Don't need fine-tuning, already 100% exact match rates, base model -> without any fine-tuning -> Impressive!* | 100+ | 1.52GB | `100.0` | `100.0` | `100.0` | [notebook-link](notebooks/SLM_Qwen3_0_0_6B_Fine_Tuning_for_Function_Calling_Tasks.ipynb) |
 | 3 | [Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B) | *release will be soon..* | ~201 | 1.77GB | `` | `` | `` | `` |
 | 4 | [HuggingFaceTB/SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct) | *release will be soon..* | primarily for English | ~1.97GB | `` | `` | `` | `` |
 | 5 | [apple/OpenELM-270M-Instruct](https://huggingface.co/apple/OpenELM-270M-Instruct) | *release will be soon..* | primarily for English | 543MB | `` | `` | `` | `` |
