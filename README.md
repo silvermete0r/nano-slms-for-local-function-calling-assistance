@@ -99,6 +99,10 @@ Lightweight function-calling models fine-tuned using `LoRA SFT (full-precision)`
 2. Google’s Secure AI Framework (SAIF): https://safety.google/safety/saif/
 3. No-Code Fine-tuning web platform for gemma-270m: https://huggingface.co/spaces/google/functiongemma-tuning-lab
 
+## Competitions
+
+1. [Build Small Hackathon by Gradio & HuggingFace 🤗](https://huggingface.co/build-small-hackathon)
+
 ## References
 
 This project uses data derived from the Salesforce xLAM Function Calling 60k dataset: https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k | Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
