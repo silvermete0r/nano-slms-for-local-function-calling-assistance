@@ -75,9 +75,9 @@ Lightweight function-calling models fine-tuned using `LoRA SFT (full-precision)`
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
 | 1 | [Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct) | [silvermete0r/qwen2.5-nano-function-master](https://huggingface.co/silvermete0r/qwen2.5-nano-function-master) | ~29 | 1GB | `fine-tuned` | `154` | `2.0` | `69.1%` | [notebook-link](notebooks/SLM_Qwen2_5_0_5B_Fine_Tuning_for_Function_Calling_Tasks.ipynb) |
 | 2 | [Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B) | `waiting..` | 100+ | 1.52GB | `waiting..` | `waiting..` | `waiting..` | `waiting..` | [notebook-link](notebooks/SLM_Qwen3_0_0_6B_Batch_Inference_Testing_Function_Calling_Tasks.ipynb) |
-| 3 | [HuggingFaceTB/SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct) | `...` | *release will be soon..* | primarily for English | ~1.97GB | `` | `` | `` | `` |
-| 4 | [google/gemma-3-270m-it](https://huggingface.co/google/gemma-3-270m-it) | `...` | *release will be soon..*  | 140+ | 575MB | `` | `` | `` | `` |
-| 5 | [openbmb/MiniCPM5-1B](https://huggingface.co/openbmb/MiniCPM5-1B) | `...` | *release will be soon..*  | primarily English and Chinese | 2.17GB | `` | `` | `` | `` |
+| 3 | [HuggingFaceTB/SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct) | `...` | primarily for English | ~1.97GB | `` | `` | `` | `` |
+| 4 | [google/gemma-3-270m-it](https://huggingface.co/google/gemma-3-270m-it) | `...` | 140+ | 575MB | `` | `` | `` | `` |
+| 5 | [openbmb/MiniCPM5-1B](https://huggingface.co/openbmb/MiniCPM5-1B) | `...` | primarily English and Chinese | ~2.17GB | `` | `` | `` | `` |
 
 *Benchmarking the current SOTA model for function-calling based on our testing set (~1000 samples):*
 
